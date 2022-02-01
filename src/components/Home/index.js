@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import VideoGame from "../VideoGame";
 import Spinner from "../Spinner";
 
+
 //Styles
 import { Wrapper } from "./Home.styles";
 

@@ -15,7 +15,9 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.div`
+  margin-bottom: 10px;
   h2 {
+    font-size: 1.3rem;
     padding: 0;
     margin: 2px;
   }
