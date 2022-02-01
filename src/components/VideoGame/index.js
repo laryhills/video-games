@@ -3,10 +3,16 @@ import moment from "moment";
 import thumbnail from "./video-game-placeholder.png";
 
 //Styles
-import { Wrapper, Content, Image, Title, Text } from "./VideoGame.styles";
+import {
+  Wrapper,
+  Content,
+  Image,
+  Title,
+  Text,
+  Rating,
+} from "./VideoGame.styles";
 
 const VideoGame = ({ releaseDate, name, rating, summary }) => {
-  console.log();
   return (
     <Wrapper>
       <Image src={thumbnail} alt="video-game-thumb" />
@@ -21,6 +27,7 @@ const VideoGame = ({ releaseDate, name, rating, summary }) => {
           {summary.length > 150 ? `${summary.substring(0, 150)}...` : summary}
         </Text>
       </Content>
+      <Rating>{Math.ceil(rating)}</Rating>
     </Wrapper>
   );
 };

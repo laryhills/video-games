@@ -44,6 +44,7 @@ const Home = () => {
           name={videoGame.name}
           releaseDate={videoGame.first_release_date}
           summary={videoGame.summary}
+          rating={videoGame.rating}
         />
       ))}
     </Wrapper>
