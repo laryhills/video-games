@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Helmet } from "react-helmet";
 
-function App() {
+//Components
+import Sidebar from "./components/Sidebar";
+import Home from "./components/Home";
+
+//Styles
+import { GlobalStyle } from "./GlobalStyle";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Helmet>
+        <title>Video Games</title>
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Abel&family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+      </Helmet>
+      <Sidebar />
+      <Home />
+      <GlobalStyle />
     </div>
   );
-}
+};
 
 export default App;
